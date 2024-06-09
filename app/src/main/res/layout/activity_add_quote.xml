@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FEF5E9"
+    android:layout_height="match_parent"
+    tools:context=".AddQuote">
+
+    <EditText
+        android:id="@+id/AddAuthorEditText"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:hint="Who wrote it?..."
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AddQuoteButton"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/registerbuttoncolor"
+        android:text="ADD"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/AddTextEditText"
+        app:layout_constraintStart_toStartOf="@+id/AddTextEditText"
+        app:layout_constraintTop_toBottomOf="@+id/AddTextEditText" />
+
+    <EditText
+        android:id="@+id/AddTextEditText"
+        android:layout_width="318dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Write some quote..."
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/AddAuthorEditText"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/AddAuthorEditText"
+        app:layout_constraintTop_toBottomOf="@+id/AddAuthorEditText" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="106dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logoquote_round" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#3A3A3A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/HomeAddQuoteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_bar_button"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/HomeProfileButton"
+            app:layout_constraintStart_toEndOf="@+id/HomeViewButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/HomeProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/menu_bar_sidebuttons"
+            android:text="Profile"
+            android:textColor="#ACACAC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/HomeViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/menu_bar_sidebuttons"
+            android:text="VIEW"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620075831768",
+    "project_id": "postsathentication",
+    "storage_bucket": "postsathentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620075831768:android:428dfeab10d2f49471e2ad",
+        "android_client_info": {
+          "package_name": "com.example.authenticationguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgSO_mv_Wyd4ivVM4SPrqJFj39jCRZBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620075831768:android:e2af898be24b25d771e2ad",
+        "android_client_info": {
+          "package_name": "com.example.quote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgSO_mv_Wyd4ivVM4SPrqJFj39jCRZBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
